@@ -33,7 +33,7 @@ WIN_COMBINATIONS=[
       return win_combination
     end
     }
-    return FALSE
+    return false
   end
   
   
