@@ -34,8 +34,19 @@ WIN_COMBINATIONS=[
     end
     }
     return false
-  end
+end
   
+def full?(board)
+  board.all? {|index| index == "X" || index == "O"}
+end
+
+def draw?(board)
+  if !won?(board) && full?(board)
+    return true
+  else
+    return false
+  end
+end
   
   
     
